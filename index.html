@@ -30,28 +30,46 @@
         }   
         .grass-bg {
             background-image: url('src/img/home/Untitled-9.png');
-    background-size: cover;
-    background-position: bottom;
-    /* height: 100vh; */
-    height: 82vh;
-    position: relative;
-    top: 0px;
-    /* overflow: hidden; */
-    background-color: transparent;
+            background-size: cover;
+            background-position: bottom;
+            /* height: 100vh; */
+            height: 82vh;
+            position: relative;
+            top: 0px;
+            /* overflow: hidden; */
+            background-color: transparent;
         }   
 
         .hero-bg h1 {
-        transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth easing */
-    }
+            transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth easing */
+        }
 
-         /* Smooth mouse tracking animation */
-    .hero-bg:hover h1 {
-        cursor: pointer;
-    }
+        /* Smooth mouse tracking animation */
+        .hero-bg:hover h1 {
+            cursor: pointer;
+        }
 
-    .hero-bg:hover h1 {
-        transform: translateX(var(--x-pos, 0px)) translateY(var(--y-pos, 0px));
-    }
+        .hero-bg:hover h1 {
+            transform: translateX(var(--x-pos, 0px)) translateY(var(--y-pos, 0px));
+        }
+        
+        .marquee-container {
+            animation: marquee 15s linear infinite;
+        }
+    
+        @keyframes marquee {
+            0% {
+                transform: translateX(0%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+    
+        /* Optional: Pause animation on hover */
+        .marquee-container:hover {
+            animation-play-state: paused;
+        }
 
     </style>
 </head>
@@ -93,10 +111,39 @@
         </header>
         <!-- hero starts -->
          <div class="grass-bg">
-            <div class="relative mt-10">
-                <h1 class="water-brush-font text-white font-medium text-[350px] text-center left-1/2 transform -translate-x-1/2 absolute">Wildlife</h1>
-                <div  class="left-1/2 transform -translate-x-1/2 absolute" style="color: rgb(255, 255, 255);">
+            <div class="relative mt-10 max-h-[50vh]">
+                <h1 class="water-brush-font text-white font-medium text-[350px] text-center">Wildlife</h1>
+                <div  class="left-1/2 transform -translate-x-1/2 top-0 absolute" style="color: rgb(255, 255, 255);">
                     <img src="src/img/home/hero-elephant.png" alt="">
+                </div>
+            </div>
+            <div class="border-t border-gray-200 relative mt-20">
+                <div class="container mx-auto px-20">
+                    <div class="grid grid-cols-5">
+                        <div class="col-span-2 py-8 border-r border-gray-200">
+                           <h2 class="text-3xl font-semibold text-white">Let's make safari ride, the most memorable experience</h2>
+                        </div>
+                        <div class="col-span-1 py-8 border-r border-gray-200">
+                            <h2 class="text-center font-bold text-5xl text-white">103+</h2>
+                           <p class="text-xl font-normal text-white text-center mt-1">Skilled Contractors</p>
+                        </div>
+                        <div class="col-span-1 py-8 border-r border-gray-200">
+                            <h2 class="text-center font-bold text-5xl text-white">524k</h2>
+                           <p class="text-xl font-normal text-white text-center mt-1">Visited in zoo</p>
+                        </div>
+                        <div class="col-span-1 py-8 flex justify-center items-center">
+                            <div class="flex space-x-4">
+                                <a href="#" class="flex items-center space-x-4 font-bold text-3xl text-white hover:text-indigo-600 transition-colors duration-300">Buy ticket
+                                    <span class="pl-3">
+
+                                        <svg class="w-5 rotate-180" fill="currentColor" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+                                            <path d="M32 15H3.41l8.29-8.29-1.41-1.42-10 10a1 1 0 0 0 0 1.41l10 10 1.41-1.41L3.41 17H32z" data-name="4-Arrow Left"></path>
+                                        </svg>
+                                    </span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
          </div>    
@@ -107,7 +154,7 @@
                 <p class="text-lg font-medium text-white">SAFARI TOUR</p>
                 <h2 class="text-6xl font-semibold text-white mt-3">Discover animal way</h2>
             </div>
-            <div class="py-10">
+            <div class="py-14">
                 <div class="grid grid-cols-3 gap-10">
                     <div class="col-span-1 relative overflow-hidden rounded-4xl group">
                         <div class="relative w-full h-full bg-[url(/src/img/home/panther.jpg)] bg-cover bg-center bg-no-repeat transition-all duration-300 group-hover:scale-110">
@@ -158,7 +205,7 @@
                         </div>
                     </div> 
                 </div>
-                <div class="pt-20">
+                <div class="pt-24">
                     <div class="flex items-center gap-4 w-full">
                         <span class="text-white text-base font-normal whitespace-nowrap">Trusted partner</span>
                         <hr class="w-full border-t border-gray-400 mt-1">
@@ -169,44 +216,36 @@
                     </div>
                     <hr class="w-full border-t border-gray-400 mt-1">
                 </div>
+                <!-- marquee -->
+                <div class="relative overflow-hidden">
+                    <div class="marquee-container flex whitespace-nowrap">
+                        <!-- Original content -->
+                        <div class="flex items-center space-x-8 py-6 mx-4 min-w-max">
+                            <p class="text-[#5D5D5D4D] text-7xl font-bold">Special service</p>
+                            <img src="src/img/home/paw.png" alt="" class="mt-2">
+                        </div>
+                        <div class="flex items-center space-x-6 py-6 mx-4 min-w-max">
+                            <p class="text-[#5D5D5D4D] text-7xl font-bold">Special service</p>
+                            <img src="src/img/home/paw.png" alt="" class="mt-2">
+                        </div>
+                        <div class="flex items-center space-x-6 py-6 mx-4 min-w-max">
+                            <p class="text-[#5D5D5D4D] text-7xl font-bold">Special service</p>
+                            <img src="src/img/home/paw.png" alt="" class="mt-2">
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
-    <style>
-       .panther {
-        position: relative;
-        
-    }
-
-    .panther::before {
-        content: "";
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        background-image: url('/src/img/home/panther.jpg');
-        background-size: cover;
-        background-position: center;
-        filter: blur(0) scale(1);
-        transition: filter 0.5s ease-in-out, transform 0.5s ease-in-out;
-        z-index: -1; /* Ensures the pseudo-element is behind the content */
-    }
-
-    /* Hover effect for the panther background */
-    .panther:hover::before {
-        filter: blur(8px);
-        transform: scale(1.1);
-    }
-
-    /* Styling for the arrow hover effect */
-    .group-hover:bg-indigo-600 {
-        background-color: indigo;
-    }
-    </style>
 </body>
     <script>
+        // marquee section
+         // Clone the content for seamless looping
+        const container = document.querySelector('.marquee-container');
+        const content = container.innerHTML;
+        container.innerHTML = content + content;
+        
+        // hero
         const hero = document.querySelector('.hero-bg');
         const h1 = hero.querySelector('h1');
         let lastX = 0, lastY = 0;
