@@ -1,0 +1,65 @@
+.arrow-animation {
+    display: inline-flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    padding: 12px 26px 12px 26px; /* Added right padding for uniformity */
+    border: 2px solid white;
+    border-radius: 50px;
+    transition: all 0.3s ease-in-out;
+}
+
+/* Arrow container */
+.arrow-wrapper {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+
+/* First arrow (moves forward) */
+.arrow {
+    position: absolute;
+    display: inline-block;
+    font-size: 20px;
+    transform: rotate(-30deg);
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+/* Second arrow (comes from behind) */
+.arrow-replace {
+    position: absolute;
+    display: inline-block;
+    font-size: 20px;
+    transform: rotate(-30deg) translateX(-30px); /* Starts behind */
+    opacity: 0;
+    transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+    transition-delay: 0.2s; /* Pause before appearing */
+}
+
+/* On hover: first arrow moves to border, second arrow appears */
+.arrow-animation:hover .arrow {
+    transform: rotate(-30deg) translateX(28px); /* Moves to the edge */
+    opacity: 0;
+}
+
+.arrow-animation:hover .arrow-replace {
+    transform: rotate(-30deg) translateX(0);
+    opacity: 1;
+}
+
+/* On hover out: Reverse effect */
+.arrow-animation:not(:hover) .arrow {
+    transform: rotate(-30deg) translateX(0);
+    opacity: 1;
+    transition-delay: 0.2s;
+}
+
+.arrow-animation:not(:hover) .arrow-replace {
+    transform: rotate(-30deg) translateX(-30px);
+    opacity: 0;
+    transition-delay: 0s;
+}
