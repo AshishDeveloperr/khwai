@@ -4,7 +4,6 @@
     position: relative;
     overflow: hidden;
     padding: 12px 26px 12px 26px; /* Added right padding for uniformity */
-    border: 2px solid white;
     border-radius: 50px;
     transition: all 0.3s ease-in-out;
 }
