@@ -683,8 +683,14 @@
   .aspect-\[16\/9\] {
     aspect-ratio: 16/9;
   }
+  .aspect-video {
+    aspect-ratio: var(--aspect-video);
+  }
   .h-5 {
     height: calc(var(--spacing) * 5);
+  }
+  .h-\[40vh\] {
+    height: 40vh;
   }
   .h-\[50vh\] {
     height: 50vh;
@@ -988,6 +994,33 @@
   .bg-white\/10 {
     background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
   }
+  .bg-\[url\(\'\.\.\/img\/home\'\)\] {
+    background-image: url('../img/home');
+  }
+  .bg-\[url\(\'\.\.\/img\/home\/A-guided-services\.jpg\'\)\] {
+    background-image: url('../img/home/A-guided-services.jpg');
+  }
+  .bg-\[url\(\'\.\.\/img\/home\/Act-For-WildLife\.jpg\'\)\] {
+    background-image: url('../img/home/Act-For-WildLife.jpg');
+  }
+  .bg-\[url\(\'\.\.\/img\/home\/Food-Beverages\.jpg\'\)\] {
+    background-image: url('../img/home/Food-Beverages.jpg');
+  }
+  .bg-\[url\(\'\.\.\/img\/home\/Ph\.jpg\'\)\] {
+    background-image: url('../img/home/Ph.jpg');
+  }
+  .bg-\[url\(\'\.\.\/img\/home\/Photos-with-animals\.jpg\'\)\] {
+    background-image: url('../img/home/Photos-with-animals.jpg');
+  }
+  .bg-\[url\(\'\.\.\/img\/home\/Support-Wildlife\.jpg\'\)\] {
+    background-image: url('../img/home/Support-Wildlife.jpg');
+  }
+  .bg-\[url\(\'\.\.\/img\/home\/WiFi-with-Hi-Speed\.jpg\'\)\] {
+    background-image: url('../img/home/WiFi-with-Hi-Speed.jpg');
+  }
+  .bg-\[url\(\'\.\.\/img\/home\/food\'\)\] {
+    background-image: url('../img/home/food');
+  }
   .bg-\[url\(\'\.\.\/img\/pages\/services-1\.jpg\'\)\] {
     background-image: url('../img/pages/services-1.jpg');
   }
@@ -1111,8 +1144,20 @@
   .py-36 {
     padding-block: calc(var(--spacing) * 36);
   }
+  .py-40 {
+    padding-block: calc(var(--spacing) * 40);
+  }
+  .py-44 {
+    padding-block: calc(var(--spacing) * 44);
+  }
+  .py-48 {
+    padding-block: calc(var(--spacing) * 48);
+  }
   .py-52 {
     padding-block: calc(var(--spacing) * 52);
+  }
+  .py-60 {
+    padding-block: calc(var(--spacing) * 60);
   }
   .py-80 {
     padding-block: calc(var(--spacing) * 80);
@@ -1144,8 +1189,14 @@
   .pt-20 {
     padding-top: calc(var(--spacing) * 20);
   }
+  .pt-24 {
+    padding-top: calc(var(--spacing) * 24);
+  }
   .pt-28 {
     padding-top: calc(var(--spacing) * 28);
+  }
+  .pt-32 {
+    padding-top: calc(var(--spacing) * 32);
   }
   .pr-6 {
     padding-right: calc(var(--spacing) * 6);
@@ -1170,6 +1221,9 @@
   }
   .pb-14 {
     padding-bottom: calc(var(--spacing) * 14);
+  }
+  .pb-16 {
+    padding-bottom: calc(var(--spacing) * 16);
   }
   .pb-20 {
     padding-bottom: calc(var(--spacing) * 20);
