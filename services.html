@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="src/css/output.css">
+    <link rel="stylesheet" href="src/css/custom.css">
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Water+Brush&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+
+    <title>Document</title>
+    <style>
+        *{
+            
+            font-family: "Barlow Semi Condensed", serif;
+        }
+        .water-brush-font {
+            font-family: "Water Brush", serif;
+        }
+        .hero-bg {
+            background-image: url('src/img/about-bg.png');
+            background-size: cover;
+            background-position: center;
+            position: relative;
+            overflow-x: clip;
+        }   
+       
+        .hero-bg::before {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: #091722;
+            opacity: 0.2; /* Adjust for desired transparency */
+            z-index: 1;
+        }
+
+        .hero-bg * {
+            position: relative;
+            z-index: 2;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="hero-bg h-[50vh]">
+        <header class="border-b border-gray-400">
+            <div class="container mx-auto py-7">
+                <div class="flex justify-between">
+                    <div class="flex space-x-10 items-center">
+                        <div>
+                            <img src="https://www.themetechmount.com/wordpress/wilddale-adv/wp-content/uploads/2024/04/logo.png" alt="">
+                        </div>
+                        <ul class="flex space-x-10">
+                            <li class="text-xl font-normal text-white">Home</li>
+                            <li class="text-xl font-normal text-white">About us</li>
+                            <li class="text-xl font-normal text-white">Services</li>
+                            <li class="text-xl font-normal text-white">Gallery</li>
+                            <li class="text-xl font-normal text-white">Blog</li>
+                            <li class="text-xl font-normal text-white">Contact us</li>
+                        </ul>
+                    </div>
+                    <div class="flex space-x-6 items-center">
+                        <div class="border-r border-white text-end pr-6">
+                            <p class="text-lg font-normal text-white">To more inquery</p>
+                            <h2 class="text-xl font-normal text-white">+1234567890</h2>
+                        </div>
+                        <div>
+                            <a href="#" class="text-base font-medium text-white flex items-center arrow-animation border-2 border-white">
+                                Contact us
+                                <span class="arrow-wrapper -mt-1">
+                                    <span class="arrow">→</span>
+                                    <span class="arrow-replace">→</span>
+                                </span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- hero starts -->
+        <div class="container mx-auto px-20 pt-20 pb-8">
+            <div class="grid grid-cols-5">
+                <div class="col-span-3 pr-20">
+                    <p class="text-base font-normal text-white">Our Services</p>
+                    <p class="text-6xl font-semibold text-white leading-[70px] py-6">Our Services We dedicated to give you the best experience</p>
+                </div>
+            </div>
+        </div>    
+    </div>
+    <div class="bg-[#060D15]">
+        <div class="container mx-auto px-20 py-20">
+            <div class="grid grid-cols-4">
+                <div class="col-span-1 border-r border-l border-slate-600 px-6">
+                    <span class="text-xl font-medium text-gray-400">01</span>
+                    <p class="text-2xl font-semibold text-white py-5">Food & Beverages</p>
+                    <p class="text-base font-normal text-slate-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <!-- <img src="src/img/service-1.jpg" alt=""> -->
+                </div>
+                <div class="col-span-1 border-r border-slate-600 px-6">
+                    <span class="text-xl font-medium text-gray-400">02</span>
+                    <p class="text-2xl font-semibold text-white py-5">Act For WildLife</p>
+                    <p class="text-base font-normal text-slate-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <!-- <img src="src/img/service-2.jpg" alt=""> -->
+                </div>
+                <div class="col-span-1 border-r border-slate-600 px-6">
+                    <span class="text-xl font-medium text-gray-400">03</span>
+                    <p class="text-2xl font-semibold text-white py-5">Photos with animals</p>
+                    <p class="text-base font-normal text-slate-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <!-- <img src="src/img/service-3.jpg" alt=""> -->
+                </div>
+                <div class="col-span-1 border-r border-slate-600 px-6">
+                    <span class="text-xl font-medium text-gray-400">04</span>
+                    <p class="text-2xl font-semibold text-white py-5">WiFi with Hi-Speed</p>
+                    <p class="text-base font-normal text-slate-300">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                    <!-- <img src="src/img/service-3.jpg" alt=""> -->
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- i have to add img of .footer-bg -->
+    <footer class=" bg-[#091722]">
+        <div class="container mx-auto px-20 pt-20 pb-5">
+            <div class="grid col-span-1 sm:col-span-2 md:grid-cols-6 gap-4">
+                <div class="col-span-1">
+                    <img src="src/img/bird.jpg" alt="">
+                </div>
+                <div class="col-span-1">
+                    <img src="src/img/zebra.jpg" alt="">
+                </div>
+                <div class="col-span-1">
+                    <img src="src/img/lion.jpg" alt="">
+                </div>
+                <div class="col-span-1">
+                    <img src="src/img/crocodile.jpg" alt="">
+                </div>
+                <div class="col-span-1">
+                    <img src="src/img/bear.jpg" alt="">
+                </div>
+                <div class="col-span-1">
+                    <img src="src/img/tiger.jpg" alt="">
+                </div>
+            </div>
+            <div class="flex justify-between py-10">
+                <div class="text-gray-300 font-normal text-lg space-x-8">
+                    <a href="#">About us</a>
+                    <a href="#">Services</a>
+                    <a href="#">Blogs</a>
+                    <a href="#">Safari booking</a>
+                    <a href="#">Book a ticket</a>
+                </div>
+                <div class="text-gray-300 font-normal text-lg space-x-8">
+                    <a href="#">Facebook</a>
+                    <a href="#">Instagram</a>
+                    <a href="#">Twitter</a>
+                </div>
+            </div>
+            <div class="py-6 border-t border-slate-700">
+                <div class="grid grid-cols-3 py-5">
+                    <div class="col-span-1 pr-10">
+                        <img src="https://placehold.co/600x400" alt="" class="w-24">
+                        <p class="text-base font-normal text-slate-400 py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit.</p>
+                    </div>
+                    <div class="col-span-1 px-10 border-r border-l border-slate-700">
+                        <p class="text-white text-2xl font-medium">Get in touch</p>
+                        <p class="text-base font-normal text-slate-400 py-5">Agencium Ltd, 31 Ashcombe, London NW5 1QU, UK 1244 1485 hertnise</p>
+                        <p class="text-lg font-normal text-gray-300">+00 1245 7852 1454</p>
+                    </div>
+                    <div class="col-span-1 px-10">
+                        <p class="text-white text-2xl font-medium">Newsletter</p>
+                        <p class="text-base font-normal text-slate-400 py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit.</p>
+                        <form action="#" class="py-5">
+                            <div class="items-center mx-auto mb-3 space-y-4 max-w-screen-sm sm:flex sm:space-y-0">
+                                <div class="relative w-full">
+                                    <label for="email" class="hidden mb-2 text-sm font-medium text-gray-900">Email address</label>
+                                    <div class="flex absolute inset-y-0 left-0 items-center pl-3 pointer-events-none">
+                                        <svg class="w-5 h-5 text-gray-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"></path><path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"></path></svg>
+                                    </div>
+                                    <input class="block p-3 pl-10 w-full text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 sm:rounded-none sm:rounded-l-lg focus:ring-indigo-500 focus:border-indigo-500" placeholder="Enter your email" type="email" id="email" required="">
+                                </div>
+                                <div>
+                                    <button type="submit" class="py-3 px-5 w-full text-sm font-medium text-center text-white rounded-lg border cursor-pointer bg-indigo-700 border-indigo-600 sm:rounded-none sm:rounded-r-lg hover:bg-indigo-800 focus:ring-4 focus:ring-indigo-300">Subscribe</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="border-t border-slate-700">
+            <div class="container mx-auto px-20 py-5">
+                <div class="flex justify-between items-center">
+                    <div>
+                        <p class="text-gray-500 font-normal text-sm">© 2021 WildLife. All rights reserved.</p>
+                    </div>
+                    <div>
+                        <a href="#" class="text-sm font-normal text-gray-400 border-r border-slate-500">Terms & Conditions</a>
+                    </div>
+                 </div>
+            </div>      
+        </div>
+    </footer>
+</body>
+</html>
