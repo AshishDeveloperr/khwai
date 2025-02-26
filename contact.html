@@ -58,39 +58,68 @@
 </head>
 <body>
     <div class="bg-[#09131C]">
-        <header class="border-b border-gray-400">
-            <div class="container mx-auto py-7">
-                <div class="flex justify-between">
-                    <div class="flex space-x-10 items-center">
-                        <div>
-                            <img src="https://www.themetechmount.com/wordpress/wilddale-adv/wp-content/uploads/2024/04/logo.png" alt="">
-                        </div>
-                        <ul class="flex space-x-10">
-                            <li class="text-xl font-normal text-white">Home</li>
-                            <li class="text-xl font-normal text-white">About us</li>
-                            <li class="text-xl font-normal text-white">Services</li>
-                            <li class="text-xl font-normal text-white">Gallery</li>
-                            <li class="text-xl font-normal text-white">Blog</li>
-                            <li class="text-xl font-normal text-white">Contact us</li>
-                        </ul>
-                    </div>
-                    <div class="flex space-x-6 items-center">
-                        <div class="border-r border-white text-end pr-6">
-                            <p class="text-lg font-normal text-white">To more inquery</p>
-                            <h2 class="text-xl font-normal text-white">+1234567890</h2>
-                        </div>
-                        <div>
-                            <a href="#" class="text-base font-medium text-white flex items-center arrow-animation border-2 border-white">
-                                Contact us
-                                <span class="arrow-wrapper -mt-1">
-                                    <span class="arrow">→</span>
-                                    <span class="arrow-replace">→</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
+        <header class="border-b border-gray-400 relative px-3">
+          <div class="container mx-auto py-7">
+            <div class="flex justify-between items-center">
+              <!-- Logo and desktop nav -->
+              <div class="flex items-center space-x-10">
+                <div>
+                  <img src="https://www.themetechmount.com/wordpress/wilddale-adv/wp-content/uploads/2024/04/logo.png" alt="Logo">
                 </div>
+                <!-- Desktop Menu -->
+                <ul class="hidden lg:flex space-x-10">
+                  <li class="text-xl font-normal text-white">Home</li>
+                  <li class="text-xl font-normal text-white">About us</li>
+                  <li class="text-xl font-normal text-white">Services</li>
+                  <li class="text-xl font-normal text-white">Gallery</li>
+                  <li class="text-xl font-normal text-white">Blog</li>
+                  <li class="text-xl font-normal text-white">Contact us</li>
+                </ul>
+              </div>
+              <!-- Contact details & hamburger -->
+              <div class="flex items-center space-x-6">
+                <!-- Desktop Contact Details -->
+                <div class="hidden lg:block border-r border-white text-end pr-6">
+                  <p class="text-lg font-normal text-white">To more inquery</p>
+                  <h2 class="text-xl font-normal text-white">+1234567890</h2>
+                </div>
+                <!-- Desktop "Contact us" Button -->
+                <div class="hidden lg:block">
+                  <a href="#"
+                     class="text-base font-medium text-white flex items-center arrow-animation border-2 border-white px-3 py-1">
+                    Contact us
+                    <span class="arrow-wrapper -mt-1 ml-2">
+                      <span class="arrow">→</span>
+                      <span class="arrow-replace">→</span>
+                    </span>
+                  </a>
+                </div>
+                <!-- Hamburger Icon for Mobile -->
+                <button id="mobile-menu-toggle" class="lg:hidden text-white focus:outline-none">
+                  <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                       xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M4 6h16M4 12h16M4 18h16"></path>
+                  </svg>
+                </button>
+              </div>
             </div>
+          </div>
+          <!-- Mobile Menu floating overlay -->
+          <div id="mobile-menu" class="lg:hidden hidden absolute top-full left-0 w-full z-50">
+            <ul class="flex flex-col space-y-4 px-4 py-6 bg-[#09131C]">
+              <li class="text-xl font-normal text-white">Home</li>
+              <li class="text-xl font-normal text-white">About us</li>
+              <li class="text-xl font-normal text-white">Services</li>
+              <li class="text-xl font-normal text-white">Gallery</li>
+              <li class="text-xl font-normal text-white">Blog</li>
+              <li class="text-xl font-normal text-white">Contact us</li>
+              <li class="border-t border-gray-400 pt-4">
+                <p class="text-lg font-normal text-white">To more inquery</p>
+                <h2 class="text-xl font-normal text-white">+1234567890</h2>
+              </li>
+            </ul>
+          </div>
         </header>
     </div>
     <div class="contact-bg">
@@ -259,11 +288,6 @@
             </div>      
         </div>
     </footer>
+    <script src="src/js/main.js"></script>
 </body>
-<script>
-    // Clone the content for seamless looping
-    const container = document.querySelector('.marquee-container');
-    const content = container.innerHTML;
-    container.innerHTML = content + content;
-</script>
 </html>

@@ -557,6 +557,9 @@
   .top-80 {
     top: calc(var(--spacing) * 80);
   }
+  .top-full {
+    top: 100%;
+  }
   .-right-28 {
     right: calc(var(--spacing) * -28);
   }
@@ -677,6 +680,9 @@
   .ml-0\.5 {
     margin-left: calc(var(--spacing) * 0.5);
   }
+  .ml-2 {
+    margin-left: calc(var(--spacing) * 2);
+  }
   .block {
     display: block;
   }
@@ -703,6 +709,9 @@
   }
   .h-5 {
     height: calc(var(--spacing) * 5);
+  }
+  .h-8 {
+    height: calc(var(--spacing) * 8);
   }
   .h-\[40vh\] {
     height: 40vh;
@@ -1805,9 +1814,29 @@
       top: calc(var(--spacing) * 80);
     }
   }
+  .lg\:col-span-1 {
+    @media (width >= 64rem) {
+      grid-column: span 1 / span 1;
+    }
+  }
+  .lg\:col-span-2 {
+    @media (width >= 64rem) {
+      grid-column: span 2 / span 2;
+    }
+  }
+  .lg\:block {
+    @media (width >= 64rem) {
+      display: block;
+    }
+  }
   .lg\:flex {
     @media (width >= 64rem) {
       display: flex;
+    }
+  }
+  .lg\:hidden {
+    @media (width >= 64rem) {
+      display: none;
     }
   }
   .lg\:inline {
@@ -1818,6 +1847,11 @@
   .lg\:w-\[40vw\] {
     @media (width >= 64rem) {
       width: 40vw;
+    }
+  }
+  .lg\:grid-cols-2 {
+    @media (width >= 64rem) {
+      grid-template-columns: repeat(2, minmax(0, 1fr));
     }
   }
   .lg\:grid-cols-3 {
@@ -1880,6 +1914,11 @@
   .lg\:py-16 {
     @media (width >= 64rem) {
       padding-block: calc(var(--spacing) * 16);
+    }
+  }
+  .lg\:py-44 {
+    @media (width >= 64rem) {
+      padding-block: calc(var(--spacing) * 44);
     }
   }
   .lg\:pt-20 {
