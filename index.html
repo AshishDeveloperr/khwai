@@ -41,7 +41,7 @@
         }   
         @media (width < 64rem) {
             .grass-bg {
-                height: 24vh;
+                height: 28vh;
             }   
             .hero-bg {
             /* background-image: url('src/img/home/hero-bg.jpg');
@@ -97,7 +97,7 @@
                     <img src="https://www.themetechmount.com/wordpress/wilddale-adv/wp-content/uploads/2024/04/logo.png" alt="Logo">
                   </div>
                   <!-- Desktop Menu -->
-                  <ul class="hidden lg:flex space-x-10">
+                  <ul class="hidden xl:flex space-x-10">
                     <li class="text-xl font-normal text-white">Home</li>
                     <li class="text-xl font-normal text-white">About us</li>
                     <li class="text-xl font-normal text-white">Services</li>
@@ -109,12 +109,12 @@
                 <!-- Contact details & hamburger -->
                 <div class="flex items-center space-x-6">
                   <!-- Desktop Contact Details -->
-                  <div class="hidden lg:block border-r border-white text-end pr-6">
+                  <div class="hidden xl:block border-r border-white text-end pr-6">
                     <p class="text-lg font-normal text-white">To more inquery</p>
                     <h2 class="text-xl font-normal text-white">+1234567890</h2>
                   </div>
                   <!-- Desktop "Contact us" Button -->
-                  <div class="hidden lg:block">
+                  <div class="hidden xl:block">
                     <a href="#"
                        class="text-base font-medium text-white flex items-center arrow-animation border-2 border-white px-3 py-1">
                       Contact us
@@ -125,7 +125,7 @@
                     </a>
                   </div>
                   <!-- Hamburger Icon for Mobile -->
-                  <button id="mobile-menu-toggle" class="lg:hidden text-white focus:outline-none">
+                  <button id="mobile-menu-toggle" class="xl:hidden text-white focus:outline-none">
                     <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
                          xmlns="http://www.w3.org/2000/svg">
                       <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
@@ -136,7 +136,7 @@
               </div>
             </div>
             <!-- Mobile Menu floating overlay -->
-            <div id="mobile-menu" class="lg:hidden hidden absolute top-full left-0 w-full z-50">
+            <div id="mobile-menu" class="xl:hidden hidden absolute top-full left-0 w-full z-50">
               <ul class="flex flex-col space-y-4 px-4 py-6 bg-[#09131C]">
                 <li class="text-xl font-normal text-white">Home</li>
                 <li class="text-xl font-normal text-white">About us</li>
@@ -154,12 +154,12 @@
         <!-- hero starts -->
          <div class="grass-bg">
             <div class="relative mt-20 lg:mt-10 max-h-[50vh]">
-                <h1 class="water-brush-font text-white font-medium text-8xl lg:text-[350px] text-center">Wildlife</h1>
+                <h1 class="water-brush-font text-white font-medium text-8xl lg:text-[260px]  xl:text-[350px] text-center">Wildlife</h1>
                 <div  class="left-1/2 transform -translate-x-1/2 top-0 absolute" style="color: rgb(255, 255, 255);">
                     <img src="src/img/home/hero-elephant.png" alt="">
                 </div>
             </div>
-            <div class="border-t border-gray-200 relative mt-20 hidden lg:block">
+            <div class="border-t border-gray-200 relative mt-52 hidden xl:block">
                 <div class="container mx-auto px-20">
                     <div class="grid grid-cols-5">
                         <div class="col-span-2 py-8 border-r border-gray-200">
@@ -190,21 +190,24 @@
          </div>    
     </div>
     <div class="bg-[#060D15]">
-        <div class="container mx-auto px-5 lg:px-20 pt-14 lg:pt-20 pb-10">
-            <div class="block lg:hidden pb-10">
-                <h2 class="text-2xl font-medium text-white text-center mb-5">Let's make safari ride, the most memorable experience</h2>
-                <div class="text-white text-center py-5">
-                    <h2 class="text-4xl font-semibold pb-2">103+</h2>
-                    <p class="text-lg font-medium">Skilled Contractors</p>
-                </div>
-                <div class="text-white text-center py-5">
-                    <h2 class="text-4xl font-semibold pb-2">524k</h2>
-                    <p class="text-lg font-medium">Visited in zoo</p>
-                </div>
-                <div class="text-white flex justify-center py-5">
-                    <a href="#" class="text-lg font-semibold flex items-center space-x-6 hover:underline">Buy ticket
-                        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="text-white w-12 pl-2.5" viewBox="0 0 24 24" id="right-arrow" data-name="Flat Line" class="icon flat-line"><line id="primary" x1="3" y1="12" x2="21" y2="12" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"/><polyline id="primary-2" data-name="primary" points="18 15 21 12 18 9" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"/></svg>
-                    </a>
+        <div class="container mx-auto px-5 xl:px-20 pt-14 lg:pt-20 pb-10">
+            <div class="block xl:hidden pb-10">
+                <h2 class="text-2xl lg:text-4xl font-medium text-white text-center mb-5">Let's make safari ride, the most memorable experience</h2>
+                <div class="grid grid-cols-2">
+
+                    <div class="col-span-1 text-white text-center py-5">
+                        <h2 class="text-4xl lg:text-6xl font-semibold pb-2">103+</h2>
+                        <p class="text-lg font-medium">Skilled Contractors</p>
+                    </div>
+                    <div class="col-span-1 text-white text-center py-5">
+                        <h2 class="text-4xl lg:text-6xl font-semibold pb-2">524k</h2>
+                        <p class="text-lg font-medium">Visited in zoo</p>
+                    </div>
+                    <div class="col-span-2 text-white flex justify-center py-5">
+                        <a href="#" class="text-lg lg:text-2xl font-semibold flex items-center space-x-6 hover:underline">Buy ticket
+                            <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="text-white w-12 pl-2.5" viewBox="0 0 24 24" id="right-arrow" data-name="Flat Line" class="icon flat-line"><line id="primary" x1="3" y1="12" x2="21" y2="12" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"/><polyline id="primary-2" data-name="primary" points="18 15 21 12 18 9" style="fill: none; stroke: rgb(255, 255, 255); stroke-linecap: round; stroke-linejoin: round; stroke-width: 2;"/></svg>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div>
@@ -309,8 +312,8 @@
             </div>
             <!-- marquee ends -->
             <!-- photo -->
-            <div class="p-5 lg:p-10">
-                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
+            <div class="p-5 xl:p-10">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-6">
                     <div class="col-span-2 relative overflow-hidden group">
                         <!-- Image Container -->
                         <div class="relative">
@@ -375,7 +378,7 @@
                     </div>
                 </div>
             </div>
-            <div class="container mx-auto px-5 lg:px-20 pt-10 pb-20">
+            <div class="container mx-auto px-5 xl:px-20 pt-10 pb-20">
                 <div class="pb-14">
                     <p class="text-white text-3xl lg:text-6xl font-semibold text-center">Animals you will meet</p>
                 </div>
@@ -408,10 +411,10 @@
         <div class="absolute inset-0 bg-[#091722] opacity-80"></div>
 
         <!-- Content -->
-        <div class="relative container mx-auto px-5 lg:px-20 py-16 lg:py-36">
+        <div class="relative container mx-auto px-5 xl:px-20 py-16 lg:py-36">
             <div class="text-white flex justify-center items-end space-x-3 lg:space-x-5 leading-none">
                 <p class="text-lg lg:text-5xl font-normal">Wild</p>
-                <p class="text-5xl lg:text-8xl font-bold -mb-1">LIFE</p>
+                <p class="text-5xl lg:text-7xl xl:text-8xl font-bold -mb-1">LIFE</p>
                 <p class="text-lg lg:text-5xl font-normal">With</p>
             </div>
             <div class="text-white lg:flex justify-center space-x-2 lg:py-1 pb-4 lg:pb-0">
@@ -419,8 +422,8 @@
                     <p class="text-base font-normal mt-10">Call us now to plan your next safari +0789 1582 523</p>
                 </div>
                 <div class="flex relative justify-center">
-                    <p class="text-5xl lg:text-9xl font-bold">WILD-DALE</p>
-                    <img src="src/img/home/frame.png" alt="" class="absolute -top-14 -right-28 hidden lg:block">
+                    <p class="text-5xl lg:text-7xl xl:text-9xl font-bold">WILD-DALE</p>
+                    <img src="src/img/home/frame.png" alt="" class="absolute -top-14 -right-28 hidden lg:block lg:w-28">
                 </div>
             </div>
             <div class="flex justify-center space-x-3 pt-6">
@@ -442,7 +445,7 @@
         </div>
     </div>
     <div class="bg-[#060D15]">
-        <div class="container mx-auto px-5 lg:px-20 py-12 lg:pt-20 pb-20">
+        <div class="container mx-auto px-5 xl:px-20 py-12 lg:pt-20 pb-20">
             <div class="py-10">
                 <div class="flex space-x-1">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-4 text-white" fill="currentColor" viewBox="0 0 1024 1024">
@@ -511,7 +514,7 @@
         </div>
     </div>
     <div class="bg-[#060D15]">
-        <div class="container mx-auto px-0 lg:px-20 pt-5 pb-10 lg:pb-24" style="background-image: url('src/img/home/bg-glow-one.png'); background-repeat: no-repeat; background-position: center;">
+        <div class="container mx-auto px-0 lg:px-5 xl:px-20 pt-5 pb-10 lg:pb-24" style="background-image: url('src/img/home/bg-glow-one.png'); background-repeat: no-repeat; background-position: center;">
             <div class="py-10 px-5 lg:px-0">
                 <div class="flex space-x-1">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-4 text-white" fill="currentColor" viewBox="0 0 1024 1024">
@@ -558,96 +561,98 @@
                         <button class="text-sm font-medium text-white bg-indigo-600 px-6 py-2 rounded-md">View Details</button>
                     </div>
                 </div>
-                <table class="w-full text-lg font-normal text-left text-white hidden lg:block">
-                    <tbody>
-                        <tr class="border-b border-gray-500">
-                            <th scope="row" class="px-6 md:px-0 py-6 text-2xl font-medium text-white whitespace-nowrap">
-                                Spring season with festivals
-                            </th>
-                            <td class="px-6 py-4">
-                                14 Jun 2025
-                            </td>
-                            <td class="px-6 py-4">
-                                9:00 AM - 5:00 PM
-                            </td>
-                            <td class="px-6 py-4">
-                                <a href="#">
-                                    View Details
-                                </a>
-                            </td>
-                        </tr>
-                        <tr class="border-b border-gray-500">
-                            <th scope="row" class="px-6 md:px-0 py-6 text-2xl font-medium text-white whitespace-nowrap">
-                                Flamingo paradise
-                            </th>
-                            <td class="px-6 py-4">
-                                10 Aug 2025
-                            </td>
-                            <td class="px-6 py-4">
-                                11:00 AM - 4:00 PM
-                            </td>
-                            <td class="px-6 py-4">
-                                <a href="#">
-                                    View Details
-                                </a>
-                            </td>
-                        </tr>
-                        <tr class="border-b border-gray-500">
-                            <th scope="row" class="px-6 md:px-0 py-6 text-2xl font-medium text-white whitespace-nowrap">
-                                Rainforest exploration
-                            </th>
-                            <td class="px-6 py-4">
-                                23 Oct 2025
-                            </td>
-                            <td class="px-6 py-4">
-                                5:00 AM - 3:00 PM
-                            </td>
-                            <td class="px-6 py-4">
-                                <a href="#">
-                                    View Details
-                                </a>
-                            </td>
-                        </tr>
-                        <tr class="border-b border-gray-500">
-                            <th scope="row" class="px-6 md:px-0 py-6 text-2xl font-medium text-white whitespace-nowrap">
-                                Parrots photosession
-                            </th>
-                            <td class="px-6 py-4">
-                                19 July 2025
-                            </td>
-                            <td class="px-6 py-4">
-                                9:00 AM - 8:00 PM
-                            </td>
-                            <td class="px-6 py-4">
-                                <a href="#">
-                                    View Details
-                                </a>
-                            </td>
-                        </tr>
-                        <tr class="border-b border-gray-500">
-                            <th scope="row" class="px-6 md:px-0 py-6 text-2xl font-medium text-white whitespace-nowrap">
-                                Tiger walking on the street
-                            </th>
-                            <td class="px-6 py-4">
-                                14 May 2025
-                            </td>
-                            <td class="px-6 py-4">
-                                7:00 AM - 5:00 PM
-                            </td>
-                            <td class="px-6 py-4">
-                                <a href="#">
-                                    View Details
-                                </a>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <div class="hidden lg:block">
+                    <table class="w-full text-lg font-normal text-left text-white">
+                        <tbody>
+                            <tr class="border-b border-gray-500">
+                                <th scope="row" class="px-6 md:px-0 py-6 text-2xl font-medium text-white whitespace-nowrap">
+                                    Spring season with festivals
+                                </th>
+                                <td class="px-6 py-4">
+                                    14 Jun 2025
+                                </td>
+                                <td class="px-6 py-4">
+                                    9:00 AM - 5:00 PM
+                                </td>
+                                <td class="px-6 py-4">
+                                    <a href="#">
+                                        View Details
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="border-b border-gray-500">
+                                <th scope="row" class="px-6 md:px-0 py-6 text-2xl font-medium text-white whitespace-nowrap">
+                                    Flamingo paradise
+                                </th>
+                                <td class="px-6 py-4">
+                                    10 Aug 2025
+                                </td>
+                                <td class="px-6 py-4">
+                                    11:00 AM - 4:00 PM
+                                </td>
+                                <td class="px-6 py-4">
+                                    <a href="#">
+                                        View Details
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="border-b border-gray-500">
+                                <th scope="row" class="px-6 md:px-0 py-6 text-2xl font-medium text-white whitespace-nowrap">
+                                    Rainforest exploration
+                                </th>
+                                <td class="px-6 py-4">
+                                    23 Oct 2025
+                                </td>
+                                <td class="px-6 py-4">
+                                    5:00 AM - 3:00 PM
+                                </td>
+                                <td class="px-6 py-4">
+                                    <a href="#">
+                                        View Details
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="border-b border-gray-500">
+                                <th scope="row" class="px-6 md:px-0 py-6 text-2xl font-medium text-white whitespace-nowrap">
+                                    Parrots photosession
+                                </th>
+                                <td class="px-6 py-4">
+                                    19 July 2025
+                                </td>
+                                <td class="px-6 py-4">
+                                    9:00 AM - 8:00 PM
+                                </td>
+                                <td class="px-6 py-4">
+                                    <a href="#">
+                                        View Details
+                                    </a>
+                                </td>
+                            </tr>
+                            <tr class="border-b border-gray-500">
+                                <th scope="row" class="px-6 md:px-0 py-6 text-2xl font-medium text-white whitespace-nowrap">
+                                    Tiger walking on the street
+                                </th>
+                                <td class="px-6 py-4">
+                                    14 May 2025
+                                </td>
+                                <td class="px-6 py-4">
+                                    7:00 AM - 5:00 PM
+                                </td>
+                                <td class="px-6 py-4">
+                                    <a href="#">
+                                        View Details
+                                    </a>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
             </div>
         </div>
     </div>
     <!-- i have to add img of .footer-bg -->
     <footer class=" bg-[#091722]">
-        <div class="container mx-auto px-5 lg:px-20 pt-20 pb-5">
+        <div class="container mx-auto px-5 xl:px-20 pt-20 pb-5">
             <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
                 <div class="col-span-1">
                     <img src="src/img/bird.jpg" alt="" class="w-full">
