@@ -1061,6 +1061,9 @@
   .bg-\[\#091722\] {
     background-color: #091722;
   }
+  .bg-\[\#232323\] {
+    background-color: #232323;
+  }
   .bg-\[rgba\(9\,23\,34\,0\.87\)\] {
     background-color: rgba(9,23,34,0.87);
   }
@@ -1952,6 +1955,11 @@
     @media (width >= 64rem) {
       border-left-style: var(--tw-border-style);
       border-left-width: 1px;
+    }
+  }
+  .lg\:bg-transparent {
+    @media (width >= 64rem) {
+      background-color: transparent;
     }
   }
   .lg\:p-10 {

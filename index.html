@@ -41,21 +41,13 @@
         }   
         @media (width < 64rem) {
             .grass-bg {
-                /* background-image: url('src/img/home/home-page-bg.png');
-                background-size: cover;
-                background-position: bottom; */
-                /* height: 100vh; */
-                height: 36vh;
-                /* position: relative;
-                top: 0px; */
-                /* overflow: hidden; */
-                /* background-color: transparent; */
+                height: 24vh;
             }   
             .hero-bg {
-            background-image: url('src/img/home/hero-bg.jpg');
+            /* background-image: url('src/img/home/hero-bg.jpg');
             background-size: cover;
-            background-position: center;
-            height: 40vh;
+            background-position: center; */
+            height: 45vh;
             position: relative;
             overflow-x: clip;
         }   
@@ -96,7 +88,7 @@
 </head>
 <body>
     <div class="hero-bg">
-        <header class="border-b border-gray-400 relative px-3">
+        <header class="border-b border-gray-400 relative px-3 bg-[#232323] lg:bg-transparent">
             <div class="container mx-auto py-7">
               <div class="flex justify-between items-center">
                 <!-- Logo and desktop nav -->
@@ -161,8 +153,8 @@
         </header>
         <!-- hero starts -->
          <div class="grass-bg">
-            <div class="relative mt-10 max-h-[50vh]">
-                <h1 class="water-brush-font text-white font-medium text-6xl lg:text-[350px] text-center">Wildlife</h1>
+            <div class="relative mt-20 lg:mt-10 max-h-[50vh]">
+                <h1 class="water-brush-font text-white font-medium text-8xl lg:text-[350px] text-center">Wildlife</h1>
                 <div  class="left-1/2 transform -translate-x-1/2 top-0 absolute" style="color: rgb(255, 255, 255);">
                     <img src="src/img/home/hero-elephant.png" alt="">
                 </div>
@@ -721,8 +713,14 @@
     </footer>
 </body>
     <script>
+        // menu
+        const toggleButton = document.getElementById('mobile-menu-toggle');
+        const mobileMenu = document.getElementById('mobile-menu');
+
+        toggleButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
         // marquee section
-         // Clone the content for seamless looping
         const container = document.querySelector('.marquee-container');
         const content = container.innerHTML;
         container.innerHTML = content + content;
