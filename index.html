@@ -39,6 +39,27 @@
             /* overflow: hidden; */
             background-color: transparent;
         }   
+        @media (width < 64rem) {
+            .grass-bg {
+                /* background-image: url('src/img/home/home-page-bg.png');
+                background-size: cover;
+                background-position: bottom; */
+                /* height: 100vh; */
+                height: 36vh;
+                /* position: relative;
+                top: 0px; */
+                /* overflow: hidden; */
+                /* background-color: transparent; */
+            }   
+            .hero-bg {
+            background-image: url('src/img/home/hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 40vh;
+            position: relative;
+            overflow-x: clip;
+        }   
+        }
 
         .hero-bg h1 {
             transition: transform 0.2s cubic-bezier(0.4, 0, 0.2, 1); /* Smooth easing */
@@ -75,49 +96,78 @@
 </head>
 <body>
     <div class="hero-bg">
-        <header class="border-b border-gray-400">
+        <header class="border-b border-gray-400 relative px-3">
             <div class="container mx-auto py-7">
-                <div class="flex justify-between">
-                    <div class="flex space-x-10 items-center">
-                        <div>
-                            <img src="https://www.themetechmount.com/wordpress/wilddale-adv/wp-content/uploads/2024/04/logo.png" alt="">
-                        </div>
-                        <ul class="flex space-x-10">
-                            <li class="text-xl font-normal text-white">Home</li>
-                            <li class="text-xl font-normal text-white">About us</li>
-                            <li class="text-xl font-normal text-white">Services</li>
-                            <li class="text-xl font-normal text-white">Gallery</li>
-                            <li class="text-xl font-normal text-white">Blog</li>
-                            <li class="text-xl font-normal text-white">Contact us</li>
-                        </ul>
-                    </div>
-                    <div class="flex space-x-6 items-center">
-                        <div class="border-r border-white text-end pr-6">
-                            <p class="text-lg font-normal text-white">To more inquery</p>
-                            <h2 class="text-xl font-normal text-white">+1234567890</h2>
-                        </div>
-                        <div>
-                            <a href="#" class="text-base font-medium text-white flex items-center arrow-animation border-2 border-white">
-                                Contact us
-                                <span class="arrow-wrapper -mt-1">
-                                    <span class="arrow">→</span>
-                                    <span class="arrow-replace">→</span>
-                                </span>
-                            </a>
-                        </div>
-                    </div>
+              <div class="flex justify-between items-center">
+                <!-- Logo and desktop nav -->
+                <div class="flex items-center space-x-10">
+                  <div>
+                    <img src="https://www.themetechmount.com/wordpress/wilddale-adv/wp-content/uploads/2024/04/logo.png" alt="Logo">
+                  </div>
+                  <!-- Desktop Menu -->
+                  <ul class="hidden lg:flex space-x-10">
+                    <li class="text-xl font-normal text-white">Home</li>
+                    <li class="text-xl font-normal text-white">About us</li>
+                    <li class="text-xl font-normal text-white">Services</li>
+                    <li class="text-xl font-normal text-white">Gallery</li>
+                    <li class="text-xl font-normal text-white">Blog</li>
+                    <li class="text-xl font-normal text-white">Contact us</li>
+                  </ul>
                 </div>
+                <!-- Contact details & hamburger -->
+                <div class="flex items-center space-x-6">
+                  <!-- Desktop Contact Details -->
+                  <div class="hidden lg:block border-r border-white text-end pr-6">
+                    <p class="text-lg font-normal text-white">To more inquery</p>
+                    <h2 class="text-xl font-normal text-white">+1234567890</h2>
+                  </div>
+                  <!-- Desktop "Contact us" Button -->
+                  <div class="hidden lg:block">
+                    <a href="#"
+                       class="text-base font-medium text-white flex items-center arrow-animation border-2 border-white px-3 py-1">
+                      Contact us
+                      <span class="arrow-wrapper -mt-1 ml-2">
+                        <span class="arrow">→</span>
+                        <span class="arrow-replace">→</span>
+                      </span>
+                    </a>
+                  </div>
+                  <!-- Hamburger Icon for Mobile -->
+                  <button id="mobile-menu-toggle" class="lg:hidden text-white focus:outline-none">
+                    <svg class="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                         xmlns="http://www.w3.org/2000/svg">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <!-- Mobile Menu floating overlay -->
+            <div id="mobile-menu" class="lg:hidden hidden absolute top-full left-0 w-full z-50">
+              <ul class="flex flex-col space-y-4 px-4 py-6 bg-[#09131C]">
+                <li class="text-xl font-normal text-white">Home</li>
+                <li class="text-xl font-normal text-white">About us</li>
+                <li class="text-xl font-normal text-white">Services</li>
+                <li class="text-xl font-normal text-white">Gallery</li>
+                <li class="text-xl font-normal text-white">Blog</li>
+                <li class="text-xl font-normal text-white">Contact us</li>
+                <li class="border-t border-gray-400 pt-4">
+                  <p class="text-lg font-normal text-white">To more inquery</p>
+                  <h2 class="text-xl font-normal text-white">+1234567890</h2>
+                </li>
+              </ul>
             </div>
         </header>
         <!-- hero starts -->
          <div class="grass-bg">
             <div class="relative mt-10 max-h-[50vh]">
-                <h1 class="water-brush-font text-white font-medium text-[350px] text-center">Wildlife</h1>
+                <h1 class="water-brush-font text-white font-medium text-6xl lg:text-[350px] text-center">Wildlife</h1>
                 <div  class="left-1/2 transform -translate-x-1/2 top-0 absolute" style="color: rgb(255, 255, 255);">
                     <img src="src/img/home/hero-elephant.png" alt="">
                 </div>
             </div>
-            <div class="border-t border-gray-200 relative mt-20">
+            <div class="border-t border-gray-200 relative mt-20 hidden lg:block">
                 <div class="container mx-auto px-20">
                     <div class="grid grid-cols-5">
                         <div class="col-span-2 py-8 border-r border-gray-200">
@@ -148,22 +198,22 @@
          </div>    
     </div>
     <div class="bg-[#060D15]">
-        <div class="container mx-auto px-20 pt-20 pb-10">
+        <div class="container mx-auto px-5 lg:px-20 pt-40 lg:pt-20 pb-10">
             <div>
                 <div class="flex space-x-1">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-4 text-white" fill="currentColor" viewBox="0 0 1024 1024">
                         <title>circle</title>
                         <circle cx="512" cy="512" r="256" fill="currentColor" fill-rule="evenodd"/>
                       </svg>                      
-                    <span class="text-lg font-normal text-white">SAFARI TOUR</span>
+                    <span class="text-sm lg:text-lg font-normal text-white">SAFARI TOUR</span>
                 </div>
                 <div class="flex items-center space-x-6">
-                    <h2 class="text-6xl font-semibold text-white whitespace-nowrap">Discover animal way</h2>
+                    <h2 class="text-3xl lg:text-6xl font-semibold text-white whitespace-nowrap">Discover animal way</h2>
                     <hr class="w-full border-t border-gray-500 mt-6">
                 </div>
             </div>
             <div class="pt-14">
-                <div class="grid grid-cols-3 gap-10">
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-10">
                     <div class="col-span-1 relative overflow-hidden rounded-4xl group">
                         <div class="relative w-full h-full bg-[url(/src/img/home/panther.jpg)] bg-cover bg-center bg-no-repeat transition-all duration-300 group-hover:scale-110">
                             <!-- overlay -->
@@ -218,7 +268,7 @@
                         <span class="text-white text-base font-normal whitespace-nowrap">Trusted partner</span>
                         <hr class="w-full border-t border-gray-500 mt-1">
                     </div>
-                    <div class="flex justify-center space-x-10 mt-8 mb-14">
+                    <div class="flex justify-center space-x-10 mt-8 mb-14 overflow-x-scroll lg:overflow-x-auto">
                         <img src="src/img/home/partner-1.png" alt="" class="grayscale hover:grayscale-0 hover:scale-x-105 transition-all duration-300">
                         <img src="src/img/home/partner-2.png" alt="" class="grayscale hover:grayscale-0 hover:scale-x-105 transition-all duration-300">
                         <img src="src/img/home/partner-1.png" alt="" class="grayscale hover:grayscale-0 hover:scale-x-105 transition-all duration-300">
@@ -236,23 +286,23 @@
                 <div class="marquee-container flex whitespace-nowrap">
                     <!-- Original content -->
                     <div class="flex items-center space-x-8 py-6 mx-4 min-w-max">
-                        <p class="text-[#5D5D5D4D] text-7xl font-bold">Special service</p>
+                        <p class="text-[#5D5D5D4D] text-5xl lg:text-7xl font-bold">Special service</p>
                         <img src="src/img/home/paw.png" alt="" class="mt-2">
                     </div>
                     <div class="flex items-center space-x-6 py-6 mx-4 min-w-max">
-                        <p class="text-[#5D5D5D4D] text-7xl font-bold">Special service</p>
+                        <p class="text-[#5D5D5D4D] text-5xl lg:text-7xl font-bold">Special service</p>
                         <img src="src/img/home/paw.png" alt="" class="mt-2">
                     </div>
                     <div class="flex items-center space-x-6 py-6 mx-4 min-w-max">
-                        <p class="text-[#5D5D5D4D] text-7xl font-bold">Special service</p>
+                        <p class="text-[#5D5D5D4D] text-5xl lg:text-7xl font-bold">Special service</p>
                         <img src="src/img/home/paw.png" alt="" class="mt-2">
                     </div>
                 </div>
             </div>
             <!-- marquee ends -->
             <!-- photo -->
-            <div class="p-10">
-                <div class="grid grid-cols-4 gap-8">
+            <div class="p-5 lg:p-10">
+                <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
                     <div class="col-span-2 relative overflow-hidden group">
                         <!-- Image Container -->
                         <div class="relative">
@@ -264,7 +314,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-1 relative overflow-hidden group">
+                    <div class="col-span-2 lg:col-span-1 relative overflow-hidden group">
                         <!-- Image Container -->
                         <div class="relative">
                             <img 
@@ -275,7 +325,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-1 relative overflow-hidden group">
+                    <div class="col-span-2 lg:col-span-1 relative overflow-hidden group">
                         <!-- Image Container -->
                         <div class="relative">
                             <img src="src/img/home/A-guided-services.jpg" alt="Photos with animals" class="w-full h-auto transition-transform duration-400 ease-in-out group-hover:-translate-y-4">
@@ -285,7 +335,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-1 relative overflow-hidden group">
+                    <div class="col-span-2 lg:col-span-1 relative overflow-hidden group">
                         <!-- Image Container -->
                         <div class="relative">
                             <img src="src/img/home/WiFi-with-Hi-Speed.jpg" alt="Wifi with Hi-speed" class="w-full h-auto transition-transform duration-400 ease-in-out group-hover:-translate-y-4">
@@ -295,7 +345,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-span-1 relative overflow-hidden group">
+                    <div class="col-span-2 lg:col-span-1 relative overflow-hidden group">
                         <!-- Image Container -->
                         <div class="relative">
                             <img src="src/img/home/Act-For-WildLife.jpg" alt="Support wildlife" class="w-full h-auto transition-transform duration-400 ease-in-out group-hover:-translate-y-4">
@@ -317,28 +367,29 @@
                     </div>
                 </div>
             </div>
-            <div class="container mx-auto px-20 pt-10 pb-20">
+            <div class="container mx-auto px-5 lg:px-20 pt-10 pb-20">
                 <div class="pb-14">
-                    <p class="text-white text-6xl font-semibold text-center">Animals you will meet</p>
+                    <p class="text-white text-3xl lg:text-6xl font-semibold text-center">Animals you will meet</p>
                 </div>
-                <div class="text-4xl font-medium text-white">
-                    <div class="text-center space-x-5">
-                        <span class="cursor-pointer hover:text-indigo-600 duration-300 transition-all">Orangutans -</span>
-                        <span class="cursor-pointer hover:text-indigo-600 duration-300 transition-all">Lions -</span>
-                        <span class="cursor-pointer hover:text-indigo-600 duration-300 transition-all">Peacock -</span>
-                        <span class="cursor-pointer hover:text-indigo-600 duration-300 transition-all">racoon -</span>
-                        <span class="cursor-pointer hover:text-indigo-600 duration-300 transition-all">Elephants -</span>
+                <div class="text-xl lg:text-4xl font-normal text-white">
+                    <div class="flex justify-center flex-wrap space-x-5 space-y-4 lg:space-y-0">
+                        <p class="cursor-pointer hover:text-indigo-600 duration-300 transition-all whitespace-nowrap">Orangutans -</p>
+                        <p class="cursor-pointer hover:text-indigo-600 duration-300 transition-all whitespace-nowrap">Lions -</p>
+                        <p class="cursor-pointer hover:text-indigo-600 duration-300 transition-all whitespace-nowrap">Peacock -</p>
+                        <p class="cursor-pointer hover:text-indigo-600 duration-300 transition-all whitespace-nowrap">Raccoon -</p>
+                        <p class="cursor-pointer hover:text-indigo-600 duration-300 transition-all whitespace-nowrap">Elephants -</p>
                     </div>
-                    <div class="text-center space-x-5 py-10">
-                        <span class="cursor-pointer hover:text-indigo-600 duration-300 transition-all">Koala bear -</span>
-                        <span class="cursor-pointer hover:text-indigo-600 duration-300 transition-all">Hippopotamus -</span>
-                        <span class="cursor-pointer hover:text-indigo-600 duration-300 transition-all">Flamingo -</span>
-                        <span class="cursor-pointer hover:text-indigo-600 duration-300 transition-all">Giraffes -</span>
+                    
+                    <div class="flex justify-center flex-wrap space-x-5 space-y-4 lg:space-y-0 lg:py-10">
+                        <p class="cursor-pointer hover:text-indigo-600 duration-300 transition-all">Koala bear -</p>
+                        <p class="cursor-pointer hover:text-indigo-600 duration-300 transition-all">Hippopotamus -</p>
+                        <p class="cursor-pointer hover:text-indigo-600 duration-300 transition-all">Flamingo -</p>
+                        <p class="cursor-pointer hover:text-indigo-600 duration-300 transition-all">Giraffes -</p>
                     </div>
-                    <div class="text-center space-x-5">
-                        <span class="cursor-pointer hover:text-indigo-600 duration-300 transition-all">Wolves -</span>
-                        <span class="cursor-pointer hover:text-indigo-600 duration-300 transition-all">Macaques -</span>
-                        <span class="cursor-pointer hover:text-indigo-600 duration-300 transition-all">Macaw -</span>
+                    <div class="flex justify-center flex-wrap space-x-5 space-y-4 lg:space-y-0">
+                        <p class="cursor-pointer hover:text-indigo-600 duration-300 transition-all">Wolves -</p>
+                        <p class="cursor-pointer hover:text-indigo-600 duration-300 transition-all">Macaques -</p>
+                        <p class="cursor-pointer hover:text-indigo-600 duration-300 transition-all">Macaw -</p>
                     </div>
                 </div>
             </div>
@@ -349,19 +400,19 @@
         <div class="absolute inset-0 bg-[#091722] opacity-80"></div>
 
         <!-- Content -->
-        <div class="relative container mx-auto px-20 py-36">
-            <div class="text-white flex justify-center items-end space-x-5 leading-none">
-                <p class="text-5xl font-normal">Wild</p>
-                <p class="text-8xl font-bold -mb-1">LIFE</p>
-                <p class="text-5xl font-normal">With</p>
+        <div class="relative container mx-auto px-5 lg:px-20 py-16 lg:py-36">
+            <div class="text-white flex justify-center items-end space-x-3 lg:space-x-5 leading-none">
+                <p class="text-lg lg:text-5xl font-normal">Wild</p>
+                <p class="text-5xl lg:text-8xl font-bold -mb-1">LIFE</p>
+                <p class="text-lg lg:text-5xl font-normal">With</p>
             </div>
-            <div class="text-white flex justify-center space-x-2 py-1">
+            <div class="text-white lg:flex justify-center space-x-2 lg:py-1 pb-4 lg:pb-0">
                 <div>
                     <p class="text-base font-normal mt-10">Call us now to plan your next safari +0789 1582 523</p>
                 </div>
-                <div class="flex relative">
-                    <p class="text-9xl font-bold">WILD-DALE</p>
-                    <img src="src/img/home/frame.png" alt="" class="absolute -top-14 -right-28">
+                <div class="flex relative justify-center">
+                    <p class="text-5xl lg:text-9xl font-bold">WILD-DALE</p>
+                    <img src="src/img/home/frame.png" alt="" class="absolute -top-14 -right-28 hidden lg:block">
                 </div>
             </div>
             <div class="flex justify-center space-x-3 pt-6">
@@ -383,22 +434,22 @@
         </div>
     </div>
     <div class="bg-[#060D15]">
-        <div class="container mx-auto px-20 pt-20 pb-20">
+        <div class="container mx-auto px-5 lg:px-20 py-12 lg:pt-20 pb-20">
             <div class="py-10">
                 <div class="flex space-x-1">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-4 text-white" fill="currentColor" viewBox="0 0 1024 1024">
                         <title>circle</title>
                         <circle cx="512" cy="512" r="256" fill="currentColor" fill-rule="evenodd"/>
                       </svg>                      
-                    <span class="text-lg font-normal text-white">Our Latest News</span>
+                    <span class="text-sm lg:text-lg font-normal text-white">Our Latest News</span>
                 </div>
                 <div class="flex items-center space-x-6">
-                    <h2 class="text-6xl font-semibold text-white whitespace-nowrap">Our latest news & articles</h2>
-                    <hr class="w-full border-t border-gray-500 mt-6">
+                    <h2 class="text-3xl lg:text-6xl font-semibold text-white whitespace-nowrap">Our latest news & articles</h2>
+                    <hr class="w-full border-t border-gray-500 mt-6 hidden lg:block">
                 </div>
             </div>
             <div>
-                <div class="grid grid-cols-3 gap-5"> 
+                <div class="grid grid-cols-1 lg:grid-cols-3 gap-5"> 
                     <div class="group relative col-span-1 overflow-hidden rounded-xl pt-10 pb-4 px-5 transition-all duration-300 cursor-pointer">
                         <img src="src/img/home/deer-family.jpg" alt="" class="absolute inset-0 h-full w-full object-cover transition-transform duration-500 group-hover:scale-110">
                         <div class="absolute inset-0 bg-black opacity-50 transition-opacity duration-500"></div>
@@ -452,22 +503,54 @@
         </div>
     </div>
     <div class="bg-[#060D15]">
-        <div class="container mx-auto px-20 pt-5 pb-24" style="background-image: url('src/img/home/bg-glow-one.png'); background-repeat: no-repeat; background-position: center;">
-            <div class="py-10">
+        <div class="container mx-auto px-0 lg:px-20 pt-5 pb-10 lg:pb-24" style="background-image: url('src/img/home/bg-glow-one.png'); background-repeat: no-repeat; background-position: center;">
+            <div class="py-10 px-5 lg:px-0">
                 <div class="flex space-x-1">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-4 text-white" fill="currentColor" viewBox="0 0 1024 1024">
                         <title>circle</title>
                         <circle cx="512" cy="512" r="256" fill="currentColor" fill-rule="evenodd"/>
                       </svg>                      
-                    <span class="text-lg font-normal text-white">Our Upcoming Events</span>
+                    <span class="text-sm lg:text-lg font-normal text-white">Our Upcoming Events</span>
                 </div>
                 <div class="flex items-center space-x-6">
-                    <h2 class="text-6xl font-semibold text-white whitespace-nowrap">What's coming up?</h2>
-                    <hr class="w-full border-t border-gray-500 mt-6">
+                    <h2 class="text-3xl lg:text-6xl font-semibold text-white whitespace-nowrap">What's coming up?</h2>
+                    <hr class="w-full border-t border-gray-500 mt-6 hidden lg:block">
                 </div>
             </div>
             <div class="relative overflow-x-auto shadow-md sm:rounded-lg">
-                <table class="w-full text-lg font-normal text-left text-white">
+                <div class="block lg:hidden">
+                    <div class="border-t border-gray-600 pt-6 pb-3 px-5 my-5">
+                        <h2 class="text-2xl font-semibold text-white mb-5">Spring season with festivals</h2>
+                        <p class="text-base font-medium text-white">14 Jun 2025</p>
+                        <p class="text-base font-medium text-white py-1 mb-5">9 am to 10 pm</p>
+                        <button class="text-sm font-medium text-white bg-indigo-600 px-6 py-2 rounded-md">View Details</button>
+                    </div>
+                    <div class="border-t border-gray-600 pt-6 pb-3 px-5 my-5">
+                        <h2 class="text-2xl font-semibold text-white mb-5">Flamingo Paradise</h2>
+                        <p class="text-base font-medium text-white">10 Aug 2025</p>
+                        <p class="text-base font-medium text-white py-1 mb-5">9 am to 12:20 pm</p>
+                        <button class="text-sm font-medium text-white bg-indigo-600 px-6 py-2 rounded-md">View Details</button>
+                    </div>
+                    <div class="border-t border-gray-600 pt-6 pb-3 px-5 my-5">
+                        <h2 class="text-2xl font-semibold text-white mb-5">Rainforest exploration</h2>
+                        <p class="text-base font-medium text-white">7 Sep 2025</p>
+                        <p class="text-base font-medium text-white py-1 mb-5">11:20 am to 1:20 pm</p>
+                        <button class="text-sm font-medium text-white bg-indigo-600 px-6 py-2 rounded-md">View Details</button>
+                    </div>
+                    <div class="border-t border-gray-600 pt-6 pb-3 px-5 my-5">
+                        <h2 class="text-2xl font-semibold text-white mb-5">Parrots photosession</h2>
+                        <p class="text-base font-medium text-white">13 Oct 2025</p>
+                        <p class="text-base font-medium text-white py-1 mb-5">10 am to 4:30 pm</p>
+                        <button class="text-sm font-medium text-white bg-indigo-600 px-6 py-2 rounded-md">View Details</button>
+                    </div>
+                    <div class="border-t border-gray-600 pt-6 pb-3 px-5 my-5">
+                        <h2 class="text-2xl font-semibold text-white mb-5">Tiger walking on the street</h2>
+                        <p class="text-base font-medium text-white">21 Oct 2025</p>
+                        <p class="text-base font-medium text-white py-1 mb-5">5 am to 1:30 pm</p>
+                        <button class="text-sm font-medium text-white bg-indigo-600 px-6 py-2 rounded-md">View Details</button>
+                    </div>
+                </div>
+                <table class="w-full text-lg font-normal text-left text-white hidden lg:block">
                     <tbody>
                         <tr class="border-b border-gray-500">
                             <th scope="row" class="px-6 md:px-0 py-6 text-2xl font-medium text-white whitespace-nowrap">
@@ -556,53 +639,53 @@
     </div>
     <!-- i have to add img of .footer-bg -->
     <footer class=" bg-[#091722]">
-        <div class="container mx-auto px-20 pt-20 pb-5">
-            <div class="grid col-span-1 sm:col-span-2 md:grid-cols-6 gap-4">
+        <div class="container mx-auto px-5 lg:px-20 pt-20 pb-5">
+            <div class="grid grid-cols-2 md:grid-cols-6 gap-4">
                 <div class="col-span-1">
-                    <img src="src/img/bird.jpg" alt="">
+                    <img src="src/img/bird.jpg" alt="" class="w-full">
                 </div>
                 <div class="col-span-1">
-                    <img src="src/img/zebra.jpg" alt="">
+                    <img src="src/img/zebra.jpg" alt="" class="w-full">
                 </div>
                 <div class="col-span-1">
-                    <img src="src/img/lion.jpg" alt="">
+                    <img src="src/img/lion.jpg" alt="" class="w-full">
                 </div>
                 <div class="col-span-1">
-                    <img src="src/img/crocodile.jpg" alt="">
+                    <img src="src/img/crocodile.jpg" alt="" class="w-full">
                 </div>
                 <div class="col-span-1">
-                    <img src="src/img/bear.jpg" alt="">
+                    <img src="src/img/bear.jpg" alt="" class="w-full">
                 </div>
                 <div class="col-span-1">
-                    <img src="src/img/tiger.jpg" alt="">
+                    <img src="src/img/tiger.jpg" alt="" class="w-full">
                 </div>
             </div>
-            <div class="flex justify-between py-10">
-                <div class="text-gray-300 font-normal text-lg space-x-8">
-                    <a href="#">About us</a>
-                    <a href="#">Services</a>
-                    <a href="#">Blogs</a>
-                    <a href="#">Safari booking</a>
-                    <a href="#">Book a ticket</a>
+            <div class="md:flex md:justify-between py-10">
+                <div class="text-gray-300 font-normal text-lg lg:space-x-8">
+                    <a href="#" class="block lg:inline">About us</a>
+                    <a href="#" class="block lg:inline">Services</a>
+                    <a href="#" class="block lg:inline">Blogs</a>
+                    <a href="#" class="block lg:inline">Safari booking</a>
+                    <a href="#" class="block lg:inline">Book a ticket</a>
                 </div>
                 <div class="text-gray-300 font-normal text-lg space-x-8">
-                    <a href="#">Facebook</a>
-                    <a href="#">Instagram</a>
-                    <a href="#">Twitter</a>
+                    <a href="#" class="block lg:inline">Facebook</a>
+                    <a href="#" class="block lg:inline">Instagram</a>
+                    <a href="#" class="block lg:inline">Twitter</a>
                 </div>
             </div>
-            <div class="py-6 border-t border-slate-700">
-                <div class="grid grid-cols-3 py-5">
+            <div class="py-6 lg:border-t border-slate-700">
+                <div class="grid grid-cols-1 lg:grid-cols-3 py-5">
                     <div class="col-span-1 pr-10">
                         <img src="https://placehold.co/600x400" alt="" class="w-24">
                         <p class="text-base font-normal text-slate-400 py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit.</p>
                     </div>
-                    <div class="col-span-1 px-10 border-r border-l border-slate-700">
+                    <div class="col-span-1 lg:px-10 lg:border-r lg:border-l border-slate-700">
                         <p class="text-white text-2xl font-medium">Get in touch</p>
                         <p class="text-base font-normal text-slate-400 py-5">Agencium Ltd, 31 Ashcombe, London NW5 1QU, UK 1244 1485 hertnise</p>
                         <p class="text-lg font-normal text-gray-300">+00 1245 7852 1454</p>
                     </div>
-                    <div class="col-span-1 px-10">
+                    <div class="col-span-1 lg:px-10">
                         <p class="text-white text-2xl font-medium">Newsletter</p>
                         <p class="text-base font-normal text-slate-400 py-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor sit.</p>
                         <form action="#" class="py-5">
