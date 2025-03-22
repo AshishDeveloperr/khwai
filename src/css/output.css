@@ -986,6 +986,12 @@
   .overflow-x-scroll {
     overflow-x: scroll;
   }
+  .rounded {
+    border-radius: 0.25rem;
+  }
+  .rounded-2xl {
+    border-radius: var(--radius-2xl);
+  }
   .rounded-4xl {
     border-radius: var(--radius-4xl);
   }
@@ -1102,8 +1108,14 @@
   .bg-white {
     background-color: var(--color-white);
   }
+  .bg-white\/0 {
+    background-color: color-mix(in oklab, var(--color-white) 0%, transparent);
+  }
   .bg-white\/10 {
     background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
+  }
+  .bg-white\/50 {
+    background-color: color-mix(in oklab, var(--color-white) 50%, transparent);
   }
   .bg-\[url\(\'\.\.\/img\/contact\.png\'\)\] {
     background-image: url('../img/contact.png');
@@ -1137,6 +1149,39 @@
   }
   .bg-\[url\(\'\.\.\/img\/pages\/team-bg-img\.jpg\'\)\] {
     background-image: url('../img/pages/team-bg-img.jpg');
+  }
+  .bg-\[url\(\/src\/im\)\] {
+    background-image: url(/src/im);
+  }
+  .bg-\[url\(\/src\/ima\)\] {
+    background-image: url(/src/ima);
+  }
+  .bg-\[url\(\/src\/images\)\] {
+    background-image: url(/src/images);
+  }
+  .bg-\[url\(\/src\/images\/\)\] {
+    background-image: url(/src/images/);
+  }
+  .bg-\[url\(\/src\/images\/elephant\)\] {
+    background-image: url(/src/images/elephant);
+  }
+  .bg-\[url\(\/src\/images\/elephant-\)\] {
+    background-image: url(/src/images/elephant-);
+  }
+  .bg-\[url\(\/src\/images\/elephant-mud\.png\)\] {
+    background-image: url(/src/images/elephant-mud.png);
+  }
+  .bg-\[url\(\/src\/images\/kingfisher\.jpg\)\] {
+    background-image: url(/src/images/kingfisher.jpg);
+  }
+  .bg-\[url\(\/src\/images\/view\)\] {
+    background-image: url(/src/images/view);
+  }
+  .bg-\[url\(\/src\/images\/view\.jpg\)\] {
+    background-image: url(/src/images/view.jpg);
+  }
+  .bg-\[url\(\/src\/images\/wildlife\/kingfisher\.jpg\)\] {
+    background-image: url(/src/images/wildlife/kingfisher.jpg);
   }
   .bg-\[url\(\/src\/img\/home\/bird\.jpg\)\] {
     background-image: url(/src/img/home/bird.jpg);
