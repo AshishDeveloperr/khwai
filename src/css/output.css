@@ -683,6 +683,9 @@
   .mb-14 {
     margin-bottom: calc(var(--spacing) * 14);
   }
+  .mb-16 {
+    margin-bottom: calc(var(--spacing) * 16);
+  }
   .mb-20 {
     margin-bottom: calc(var(--spacing) * 20);
   }
@@ -1129,11 +1132,17 @@
   .bg-\[url\(\'\.\.\/images\/\'\)\] {
     background-image: url('../images/');
   }
+  .bg-\[url\(\'\.\.\/images\/boating\.png\'\)\] {
+    background-image: url('../images/boating.png');
+  }
   .bg-\[url\(\'\.\.\/images\/eleghant-group\.png\'\)\] {
     background-image: url('../images/eleghant-group.png');
   }
   .bg-\[url\(\'\.\.\/images\/eleghants-group\.png\'\)\] {
     background-image: url('../images/eleghants-group.png');
+  }
+  .bg-\[url\(\'\.\.\/images\/elephant-mud\.png\'\)\] {
+    background-image: url('../images/elephant-mud.png');
   }
   .bg-\[url\(\'\.\.\/images\/elephants-group\.png\'\)\] {
     background-image: url('../images/elephants-group.png');
@@ -1152,6 +1161,9 @@
   }
   .bg-\[url\(\'\.\.\/images\/safari\.png\'\)\] {
     background-image: url('../images/safari.png');
+  }
+  .bg-\[url\(\'\.\.\/images\/three-lions\.png\'\)\] {
+    background-image: url('../images/three-lions.png');
   }
   .bg-\[url\(\'\.\.\/images\/tree\'\)\] {
     background-image: url('../images/tree');
@@ -1191,6 +1203,12 @@
   }
   .bg-\[url\(\'\.\.\/img\/pages\/team-bg-img\.jpg\'\)\] {
     background-image: url('../img/pages/team-bg-img.jpg');
+  }
+  .bg-\[url\(\'\.\.\/src\/images\/boating\.png\'\)\] {
+    background-image: url('../src/images/boating.png');
+  }
+  .bg-\[url\(\'\.\.\/src\/images\/elephant-mud\.png\'\)\] {
+    background-image: url('../src/images/elephant-mud.png');
   }
   .bg-\[url\(\/src\/im\)\] {
     background-image: url(/src/im);
