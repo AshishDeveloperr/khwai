@@ -740,6 +740,9 @@
   .h-\[500px\] {
     height: 500px;
   }
+  .h-\[520px\] {
+    height: 520px;
+  }
   .h-auto {
     height: auto;
   }
@@ -1116,6 +1119,45 @@
   }
   .bg-white\/50 {
     background-color: color-mix(in oklab, var(--color-white) 50%, transparent);
+  }
+  .bg-\[url\(\'\.\.\/ima\'\)\] {
+    background-image: url('../ima');
+  }
+  .bg-\[url\(\'\.\.\/images\'\)\] {
+    background-image: url('../images');
+  }
+  .bg-\[url\(\'\.\.\/images\/\'\)\] {
+    background-image: url('../images/');
+  }
+  .bg-\[url\(\'\.\.\/images\/eleghant-group\.png\'\)\] {
+    background-image: url('../images/eleghant-group.png');
+  }
+  .bg-\[url\(\'\.\.\/images\/eleghants-group\.png\'\)\] {
+    background-image: url('../images/eleghants-group.png');
+  }
+  .bg-\[url\(\'\.\.\/images\/elephants-group\.png\'\)\] {
+    background-image: url('../images/elephants-group.png');
+  }
+  .bg-\[url\(\'\.\.\/images\/night\'\)\] {
+    background-image: url('../images/night');
+  }
+  .bg-\[url\(\'\.\.\/images\/night-\'\)\] {
+    background-image: url('../images/night-');
+  }
+  .bg-\[url\(\'\.\.\/images\/night-camping\.png\'\)\] {
+    background-image: url('../images/night-camping.png');
+  }
+  .bg-\[url\(\'\.\.\/images\/safari\'\)\] {
+    background-image: url('../images/safari');
+  }
+  .bg-\[url\(\'\.\.\/images\/safari\.png\'\)\] {
+    background-image: url('../images/safari.png');
+  }
+  .bg-\[url\(\'\.\.\/images\/tree\'\)\] {
+    background-image: url('../images/tree');
+  }
+  .bg-\[url\(\'\.\.\/images\/tree\.jpg\'\)\] {
+    background-image: url('../images/tree.jpg');
   }
   .bg-\[url\(\'\.\.\/img\/contact\.png\'\)\] {
     background-image: url('../img/contact.png');
