@@ -20,6 +20,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Water+Brush&family=ZCOOL+XiaoWei&display=swap" rel="stylesheet">
+    <!-- Lightbox CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css" />
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
     <title>Gallery | Khwai Nomadic Camp Grounds</title>
     <style>
         *{
@@ -137,25 +140,172 @@
                 <h2 class="text-slate-200 text-3xl font-medium mb-16 mt-4 text-center">Explore the Beauty of Khwai. Browse through our gallery to catch a glimpse of the stunning landscapes, wildlife, and experiences that await you at Khwai Nomadic Campgrounds.</h2>
             </div>
         </div>
-        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8">
-            <div class="col-span-2 relative group overflow-hidden py-44 cursor-pointer">
-                <div class="absolute inset-0 bg-[url('../images/elephants-group.png')] bg-cover bg-center transform scale-110 group-hover:scale-100 transition-transform duration-500"></div>
-            </div>
-            <div class="col-span-2 lg:col-span-1 relative group overflow-hidden py-44 cursor-pointer">
-                <div class="absolute inset-0 bg-[url('../images/three-lions.png')] bg-cover bg-center transform scale-110 group-hover:scale-100 transition-transform duration-500"></div>
-            </div>
-            <div class="col-span-2 lg:col-span-1 relative group overflow-hidden py-44 cursor-pointer">
-                <div class="absolute inset-0 bg-[url('../images/elephant-mud.png')] bg-cover bg-center transform scale-110 group-hover:scale-100 transition-transform duration-500"></div>
-            </div>   
-            <div class="col-span-2 lg:col-span-1 relative group overflow-hidden py-44 cursor-pointer">
-                <div class="absolute inset-0 bg-[url('../images/boating.png')] bg-cover bg-center transform scale-110 group-hover:scale-100 transition-transform duration-500"></div>
-            </div>
-            <div class="col-span-2 lg:col-span-1 relative group overflow-hidden py-44 cursor-pointer">
-                <div class="absolute inset-0 bg-[url('../images/safari.png')] bg-cover bg-center transform scale-110 group-hover:scale-100 transition-transform duration-500"></div>
-            </div>
-            <div class="col-span-2 relative group overflow-hidden py-44 cursor-pointer">
-                <div class="absolute inset-0 bg-[url('../images/night-camping.png')] bg-cover bg-center transform scale-110 group-hover:scale-100 transition-transform duration-500"></div>
-            </div>   
+        <div class="grid grid-cols-5 gap-4">
+            <a class="col-span-1" href="src/images/elephants-group.png" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/elephants-group.png" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/three-lions.png" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/three-lions.png" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/elephant-mud.png" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/elephant-mud.png" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/boating.png" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/boating.png" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/safari.png" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/safari.png" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/night-camping.png" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/night-camping.png" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/african-wild-dog.jpg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/african-wild-dog.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/giraffe.jpg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/giraffe.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/hippo-1.jpg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/hippo-1.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/hippo-2.jpg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/hippo-2.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/hippo-3.jpg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/hippo-3.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/kingfisher.jpg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/kingfisher.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/leopard.jpg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/leopard.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/merops-nubicus.jpg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/merops-nubicus.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/mycteria-ibis.jpg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/mycteria-ibis.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/saddle-billed.jpg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/saddle-billed.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/lotus.jpg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/lotus.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/elephant.jpg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/elephant.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/zebra.jpg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/zebra.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/crocodile.jpg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/crocodile.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/zebra-2.jpg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/zebra-2.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/egg.jpg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/egg.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/tiger.jpg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/tiger.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/giraffe-2.jpg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/giraffe-2.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/elephant-2.jpg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/elephant-2.jpg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/turtle.jpeg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/turtle.jpeg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/saddle.jpeg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/saddle.jpeg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/saddle-2.jpeg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/saddle-2.jpeg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/impala.jpeg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/impala.jpeg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/impala-2.jpeg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/impala-2.jpeg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/impala-3.jpeg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/impala-3.jpeg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/buffalo.jpeg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/buffalo.jpeg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
+            <a class="col-span-1" href="src/images/wildlife/buffalo-2.jpeg" data-fancybox="gallery" data-caption="">
+              <div class="relative w-full h-60 overflow-hidden">
+                <img src="src/images/wildlife/buffalo-2.jpeg" alt="" loading="lazy" class="absolute inset-0 w-full h-full object-cover">
+              </div>
+            </a>
         </div>
     </div>
     <!-- i have to add img of .footer-bg -->
