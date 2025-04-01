@@ -530,9 +530,6 @@
   .absolute {
     position: absolute;
   }
-  .fixed {
-    position: fixed;
-  }
   .relative {
     position: relative;
   }
@@ -635,23 +632,14 @@
   .mt-4 {
     margin-top: calc(var(--spacing) * 4);
   }
-  .mt-5 {
-    margin-top: calc(var(--spacing) * 5);
-  }
   .mt-6 {
     margin-top: calc(var(--spacing) * 6);
-  }
-  .mt-7 {
-    margin-top: calc(var(--spacing) * 7);
   }
   .mt-8 {
     margin-top: calc(var(--spacing) * 8);
   }
   .mt-10 {
     margin-top: calc(var(--spacing) * 10);
-  }
-  .mt-12 {
-    margin-top: calc(var(--spacing) * 12);
   }
   .mt-14 {
     margin-top: calc(var(--spacing) * 14);
@@ -737,9 +725,6 @@
   .h-8 {
     height: calc(var(--spacing) * 8);
   }
-  .h-40 {
-    height: calc(var(--spacing) * 40);
-  }
   .h-60 {
     height: calc(var(--spacing) * 60);
   }
@@ -760,12 +745,6 @@
   }
   .max-h-\[50vh\] {
     max-height: 50vh;
-  }
-  .w-1 {
-    width: calc(var(--spacing) * 1);
-  }
-  .w-1\/2 {
-    width: calc(1/2 * 100%);
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
@@ -906,13 +885,6 @@
   }
   .gap-12 {
     gap: calc(var(--spacing) * 12);
-  }
-  .space-y-0 {
-    :where(& > :not(:last-child)) {
-      --tw-space-y-reverse: 0;
-      margin-block-start: calc(calc(var(--spacing) * 0) * var(--tw-space-y-reverse));
-      margin-block-end: calc(calc(var(--spacing) * 0) * calc(1 - var(--tw-space-y-reverse)));
-    }
   }
   .space-y-4 {
     :where(& > :not(:last-child)) {
@@ -1112,12 +1084,6 @@
   .bg-white\/10 {
     background-color: color-mix(in oklab, var(--color-white) 10%, transparent);
   }
-  .bg-\[url\(\'\.\.\/images\/boating\.png\'\)\] {
-    background-image: url('../images/boating.png');
-  }
-  .bg-\[url\(\'\.\.\/images\/elephant-mud\.png\'\)\] {
-    background-image: url('../images/elephant-mud.png');
-  }
   .bg-\[url\(\'\.\.\/images\/elephants-group\.png\'\)\] {
     background-image: url('../images/elephants-group.png');
   }
@@ -1126,9 +1092,6 @@
   }
   .bg-\[url\(\'\.\.\/images\/safari\.png\'\)\] {
     background-image: url('../images/safari.png');
-  }
-  .bg-\[url\(\'\.\.\/images\/three-lions\.png\'\)\] {
-    background-image: url('../images/three-lions.png');
   }
   .bg-\[url\(\'\.\.\/img\/contact\.png\'\)\] {
     background-image: url('../img/contact.png');
@@ -1237,9 +1200,6 @@
   }
   .py-32 {
     padding-block: calc(var(--spacing) * 32);
-  }
-  .py-44 {
-    padding-block: calc(var(--spacing) * 44);
   }
   .py-52 {
     padding-block: calc(var(--spacing) * 52);
@@ -1434,9 +1394,6 @@
   }
   .text-gray-900 {
     color: var(--color-gray-900);
-  }
-  .text-indigo-600 {
-    color: var(--color-indigo-600);
   }
   .text-slate-200 {
     color: var(--color-slate-200);
@@ -1784,11 +1741,6 @@
       display: flex;
     }
   }
-  .md\:w-1\/5 {
-    @media (width >= 48rem) {
-      width: calc(1/5 * 100%);
-    }
-  }
   .md\:grid-cols-6 {
     @media (width >= 48rem) {
       grid-template-columns: repeat(6, minmax(0, 1fr));
@@ -1797,24 +1749,6 @@
   .md\:justify-between {
     @media (width >= 48rem) {
       justify-content: space-between;
-    }
-  }
-  .md\:space-y-0 {
-    @media (width >= 48rem) {
-      :where(& > :not(:last-child)) {
-        --tw-space-y-reverse: 0;
-        margin-block-start: calc(calc(var(--spacing) * 0) * var(--tw-space-y-reverse));
-        margin-block-end: calc(calc(var(--spacing) * 0) * calc(1 - var(--tw-space-y-reverse)));
-      }
-    }
-  }
-  .md\:space-x-4 {
-    @media (width >= 48rem) {
-      :where(& > :not(:last-child)) {
-        --tw-space-x-reverse: 0;
-        margin-inline-start: calc(calc(var(--spacing) * 4) * var(--tw-space-x-reverse));
-        margin-inline-end: calc(calc(var(--spacing) * 4) * calc(1 - var(--tw-space-x-reverse)));
-      }
     }
   }
   .lg\:absolute {
@@ -2065,6 +1999,12 @@
     @media (width >= 64rem) {
       font-size: var(--text-2xl);
       line-height: var(--tw-leading, var(--text-2xl--line-height));
+    }
+  }
+  .lg\:text-3xl {
+    @media (width >= 64rem) {
+      font-size: var(--text-3xl);
+      line-height: var(--tw-leading, var(--text-3xl--line-height));
     }
   }
   .lg\:text-4xl {
