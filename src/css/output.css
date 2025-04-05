@@ -1310,6 +1310,9 @@
   .text-left {
     text-align: left;
   }
+  .font-serif {
+    font-family: var(--font-serif);
+  }
   .text-2xl {
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
@@ -1410,6 +1413,9 @@
   }
   .text-white {
     color: var(--color-white);
+  }
+  .italic {
+    font-style: italic;
   }
   .underline {
     text-decoration-line: underline;
@@ -2084,6 +2090,12 @@
     @media (width >= 64rem) {
       --tw-leading: 70px;
       line-height: 70px;
+    }
+  }
+  .lg\:font-normal {
+    @media (width >= 64rem) {
+      --tw-font-weight: var(--font-weight-normal);
+      font-weight: var(--font-weight-normal);
     }
   }
   .lg\:font-semibold {
